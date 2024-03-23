@@ -19,13 +19,15 @@ window.onload = function () {
             let span = document.createElement("span");
             if (code[_code] !== "" && _code != code.length) {
                 let codeInsert = code[_code];
-                if(codeInsert.match(/^ {4,}/)) {
-                    let countSpaces = codeInsert.search(/\S/);
-                    if(0 === countSpaces % 2) {
-                        codeInsert = codeInsert.replace(/^ {4}/gm, `  ${indentGuide}  `);
-                        codeInsert = codeInsert.replace(/[ |>] {4}/g, `  ${indentGuide}  `);
-                    }
-                }
+                // if(codeInsert.match(/^ {4,}/)) {
+                //     let countSpaces = codeInsert.search(/\S/);
+                //     if(0 === countSpaces % 2) {
+                //         codeInsert = codeInsert.replace(/^ {4}/gm, `  ${indentGuide}  `);
+                //         for(let i = 1; i < (countSpaces / 2); i++){
+                //             codeInsert = codeInsert.replace(/ {2}</gm, `${indentGuide}  <`);
+                //         }
+                //     }
+                // }
                 span.innerHTML = codeInsert;
                 frames[frame].appendChild(span);
             }
