@@ -8,7 +8,7 @@ window.onload = function () {
         link.id = cssId;
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://website.example/css/stylesheet.css';
+        link.href = '//cdn.jsdelivr.net/gh/AccountFromPL/pretty-dump@master/pretty-dump.css';
         link.media = 'all';
         head.appendChild(link);
     }
